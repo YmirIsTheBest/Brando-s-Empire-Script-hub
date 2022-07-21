@@ -20,9 +20,9 @@ end)
 
 
 
-MainSection:NewButton("keybrew Hub ", "Keyless On Top", function()
- loadstring(game:HttpGet("https://raw.githubusercontent.com/borntodiekuv/KeybrewHub/main/Main"))()
-        end)
+    MainSection:NewButton("keybrew Hub ", "Keyless On Top", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/borntodiekuv/KeybrewHub/main/Main"))()
+            end)
 
 
         MainSection:NewButton("Lazy Hub", "Script #3", function()
@@ -47,6 +47,41 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/LioK251/RbScripts/mai
 local MainSection = Main:NewSection("Scripts")
 
 
-MainSection:NewButton("Brando Hub", "This Script Requires Synapse X To Run", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/LeadMarker/Scripts/main/ProjectSlayer.lua"))()
+MainSection:NewButton("Auto Farm Script", "This Script might get you banned", function()
+    local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("LeonardHub/GPO hack", "Synapse")
+ 
+local Tab = Window:NewTab("Script")
+local ScriptSection = Tab:NewSection("Script")
+ScriptSection:NewDropdown("Script", "Script give the player", {"Scripthere", "SafeHack", "Comingsoon"}, function(s)
+    loadstring(game:HttpGet(('https://raw.githubusercontent.com/Jakekill871/public-scripts/master/GrandPieceOnlineGUI'),true))()
+    print(currentOption)
+end)
+
+end)
+
+
+MainSection:NewButton("Dolce Hub", "Dolce hub is decent", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/abcxyzawe/Grand-piece-Dolce-Hub/main/Dolce%20Hub"))()
+end)
+
+
+MainSection:NewButton("Ghost Hub", "Be CareFul I think a Ghost Is Here", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/ghost-home/public/main/GhostPiece.lua',true))()
+end)
+
+
+MainSection:NewButton("Inf DF Notifier", "Read the name homie", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/ArponAG/Scripts/main/gpo.lua', true))()
+end)
+
+
+
+---Blox Fruits
+local Main = Window:NewTab("Blox Fruits")
+local MainSection = Main:NewSection("Scripts")
+
+
+MainSection:NewButton("Fruit Rain", "Pretty Self explanatory", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/acsu123/HOHO_H/main/Loading_UI'))()
 end)
